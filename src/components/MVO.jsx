@@ -13,21 +13,21 @@ export const MVO = () => {
                     <h5 className='text-lg font-semibold'>Objetivo General:</h5>
                     <p>Establecer una empresa evaluadora y potenciadora de destinos turísticos sostenibles.</p>  
                 </div>
-                <div className='w-full h-[600px] bg-blue-300'></div>
+                <div className='w-full h-[600px] bg-blue-300 bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(/ls3.jpg)` }}></div>
             </div>
             <div className='w-[230px] lg:w-[270px] relative top-[150px]'>
                 <div>
                     <h5 className='text-lg font-semibold'>Visión:</h5>
                     <p>Convertirnos en una empresa certificadora de los destinos turísticos sostenibles.</p>
                 </div>
-                <div className='w-full h-[600px] bg-blue-300'></div>
+                <div className='w-full h-[600px] bg-blue-300 bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(/ls4.jpg)` }}></div>
             </div>
             <div className='w-[230px] lg:w-[270px] relative top-[50px]'>
                 <div>
                     <h5 className='text-lg font-semibold'>Misión:</h5>
                     <p>Ser pioneros en la formación, consolidación y fortalecimiento de los destinos turísticos sostenibles</p>
                 </div>
-                <div className='w-full h-[600px] bg-blue-300'></div>
+                <div className='w-full h-[600px] bg-blue-300 bg-center bg-cover bg-no-repeat' style={{ backgroundImage: `url(/ls5.jpg)` }}></div>
             </div>
         </div>
 

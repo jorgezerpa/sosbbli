@@ -1,9 +1,9 @@
 import React from 'react'
 
 const services = [
-    { title: 'service', image: 'https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg', description:'Ofrecer servicios de asesoría, evaluación y capacitación referentes a destinos turísticos sostenibles. ' },
-    { title: 'service', image: 'https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg', description:'Adquirir el aval y la facultad para certificar destinos turísticos sostenibles. ' },
-    { title: 'service', image: 'https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg', description:'Educar a los prestadores de servicios turísticos en materia de sostenibilidad. ' },
+    { title: 'service', image: '/ls3.jpg', description:'Ofrecer servicios de asesoría, evaluación y capacitación referentes a destinos turísticos sostenibles. ' },
+    { title: 'service', image: '/ls2.jpg', description:'Adquirir el aval y la facultad para certificar destinos turísticos sostenibles. ' },
+    { title: 'service', image: '/ls.jpg', description:'Educar a los prestadores de servicios turísticos en materia de sostenibilidad. ' },
 ]
 
 export const Services = () => {
