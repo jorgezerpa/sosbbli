@@ -18,13 +18,33 @@ module.exports = {
           '100%': {transform: 'scale(1)', opacity:1},
         },
         steps: {
-          '0%': {transfrom: 'scale(0)', opacity:0},
-          '100%': {transfrom: 'scale(1)', opacity:1},
-        }
+          '0%': {transform: 'scale(0)', opacity:0},
+          '100%': {transform: 'scale(1)', opacity:1},
+        },
+        heightUp: {
+          '0%': {transform: 'scaleY(0)'},
+          '100%': {transform: 'scaleY(1)'},
+        },
+        fadeIn: {
+          '0%': {opacity:0},
+          '100%': {opacity:1},
+        },
+        slideLeft: {
+          '0%': {opacity:0, transform:'translateX(-100px)'},
+          '100%': {opacity:1, transform:'translateX(0px)'},
+        },
+        slideRight: {
+          '0%': {opacity:0, transform:'translateX(100px)'},
+          '100%': {opacity:1, transform:'translateX(0px)'},
+        },
       },
       animation: {
         zoomIn: 'zoomIn .5s ease-in-out forwards 1.5s',
-        steps: 'steps .5s linear forwards'
+        steps: 'steps .5s linear forwards',
+        heightUp: 'heightUp .5s linear forwards',
+        fadeIn: 'fadeIn .5s linear forwards',
+        slideLeft: 'slideLeft .5s ease forwards',
+        slideRight: 'slideRight .5s ease forwards',
       }
     },
 

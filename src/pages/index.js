@@ -8,11 +8,11 @@ import { Team } from '../components/Team'
 const index = () => {
   return (
     <>
-      <Banner />
-      <MVO />
-      <Services />
-      <Pricing />
-      <Team />
+      <div id='home'><Banner /></div>
+      <div id='mvo'><MVO /></div>
+      <div id='services'><Services /></div>
+      <div id='pricing'><Pricing /></div>
+      <div id='team'><Team /></div>
     </>
   )
 }

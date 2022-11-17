@@ -1,4 +1,5 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const cards = [
     { link:'', title: 'starter', subtitle:'Best option for personal use & for your next project.', price:29, li:[ 'Individual configuration', 'No setup, or hidden fees', 'Team size: 1 developer', 'Premium support: 6 months', 'Free updates: 6 months' ]},
@@ -7,17 +8,19 @@ const cards = [
 ]
 
 export const Pricing = () => {
+    const [ref, inView] = useInView({threshold:1, triggerOnce:true });
+
   return (
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-white dark:bg-gray-900 mt-36">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+            <div ref={ref} className={`${inView && 'animate-fadeIn'} opacity-0 mx-auto max-w-screen-md text-center mb-8 lg:mb-12`}>
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nuestros Precios</h2>
                 <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat corrupti qui accusantium ex reiciendis vel, ab, veniam nobis iusto adipisci incidunt recusandae, quia tempora necessitatibus voluptas explicabo. Nihil, ea reiciendis.</p>
             </div>
             <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                 {/* <!-- Pricing Cards --> */}
                 { cards.map((card, i)=>(
-                    <div key={card.title+i} className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div key={card.title+i} className={`${inView && 'animate-fadeIn'} flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white`}>
                         <h3 className="mb-4 text-2xl font-semibold">{card.title}</h3>
                         <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">{card.subtitle}</p>
                         <div className="flex justify-center items-baseline my-8">
